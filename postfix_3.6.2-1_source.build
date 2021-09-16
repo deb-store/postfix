@@ -2099,6 +2099,7 @@ dpkg-source: warning: ignoring deletion of directory lib
 dpkg-source: warning: ignoring deletion of file lib/.keep, use --include-removal to override
 dpkg-source: warning: ignoring deletion of directory conf
 dpkg-source: warning: ignoring deletion of file conf/master.cf, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file conf/main.cf.tls, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file conf/generic, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file conf/aliases, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file conf/dynamicmaps.cf, use --include-removal to override
@@ -2335,8 +2336,5 @@ Now running lintian postfix_3.6.2-1_source.changes ...
 warning: running with root privileges is not recommended!
 W: postfix source: no-nmu-in-changelog
 W: postfix source: orig-tarball-missing-upstream-signature postfix_3.6.2.orig.tar.gz
-W: postfix source: patch-file-present-but-not-mentioned-in-series 05_debian_defaults.diff
-W: postfix source: patch-file-present-but-not-mentioned-in-series 05_debian_manpage_differences.diff
-W: postfix source: patch-file-present-but-not-mentioned-in-series 40_chroot_by_default.diff
 W: postfix source: source-nmu-has-incorrect-version-number 3.6.2-1
 Finished running lintian.
