@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 16 Sep 2021 14:00:00 +0300
+Source: postfix
+Architecture: source
+Version: 3.6.2-1
+Distribution: unstable
+Urgency: medium
+Maintainer: LaMont Jones <lamont@debian.org>
+Changed-By: Package Store <kitsune.solar@gmail.com>
+Changes:
+ postfix (3.6.2-1) unstable; urgency=medium
+ .
+   * NEW: v3.6.2.
+Checksums-Sha1:
+ 5b9f8997b6a9dab1248a5b707f63d4b24e958b37 1870 postfix_3.6.2-1.dsc
+ 712230d7b0789d6610d84e8f03937f720fe3963d 4749530 postfix_3.6.2.orig.tar.gz
+ 0a594c7d18f5381588748e675e7aec7c08790cef 204156 postfix_3.6.2-1.debian.tar.xz
+ 8266c47540fb8da32271ca9f1f0c4d1f8ddb7e54 4882 postfix_3.6.2-1_source.buildinfo
+Checksums-Sha256:
+ 32998df88df06e4a5f0643cf3b69b81e0109d709c1907060705a14cb87112708 1870 postfix_3.6.2-1.dsc
+ 507323d20d7b3f705f49cf8c07d437c6d8090bed07e15a3c0ec405edad54a7d4 4749530 postfix_3.6.2.orig.tar.gz
+ b4e7c6e74f15d99a40e8261263195b4c73c51bb7a414544534dcba89ee17f5c9 204156 postfix_3.6.2-1.debian.tar.xz
+ f0451d03f6caef0017743260f73f549caf30979431436908d213cf01d1d1c559 4882 postfix_3.6.2-1_source.buildinfo
+Files:
+ 88de04f67a657ecf3c1e57d1561ee67a 1870 mail optional postfix_3.6.2-1.dsc
+ 4718b498fa4285cf275f506c169f4746 4749530 mail optional postfix_3.6.2.orig.tar.gz
+ df0ef28a6a44dd37a1bc3f20cc4b38ed 204156 mail optional postfix_3.6.2-1.debian.tar.xz
+ 0240ce56a1feca45ef4c8e7139680270 4882 mail optional postfix_3.6.2-1_source.buildinfo
