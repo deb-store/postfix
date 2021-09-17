@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui -i -d -S
 dpkg-buildpackage: info: source package postfix
-dpkg-buildpackage: info: source version 3.6.2-1
+dpkg-buildpackage: info: source version 3.6.2-100
 dpkg-buildpackage: info: source distribution unstable
 dpkg-buildpackage: info: source changed by Package Store <kitsune.solar@gmail.com>
  dpkg-source -i --before-build .
@@ -2325,16 +2325,16 @@ dpkg-source: warning: ignoring deletion of directory implementation-notes
 dpkg-source: warning: ignoring deletion of file implementation-notes/DSN, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file implementation-notes/MILTER, use --include-removal to override
 dpkg-source: warning: ignoring deletion of file implementation-notes/ENHANCED_STATUS_CODES, use --include-removal to override
-dpkg-source: info: building postfix in postfix_3.6.2-1.debian.tar.xz
-dpkg-source: info: building postfix in postfix_3.6.2-1.dsc
+dpkg-source: info: building postfix in postfix_3.6.2-100.debian.tar.xz
+dpkg-source: info: building postfix in postfix_3.6.2-100.dsc
  dpkg-genbuildinfo --build=source
- dpkg-genchanges --build=source >../postfix_3.6.2-1_source.changes
+ dpkg-genchanges --build=source >../postfix_3.6.2-100_source.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source -i --after-build .
 dpkg-buildpackage: info: full upload (original source is included)
-Now running lintian postfix_3.6.2-1_source.changes ...
+Now running lintian postfix_3.6.2-100_source.changes ...
 warning: running with root privileges is not recommended!
 W: postfix source: no-nmu-in-changelog
 W: postfix source: orig-tarball-missing-upstream-signature postfix_3.6.2.orig.tar.gz
-W: postfix source: source-nmu-has-incorrect-version-number 3.6.2-1
+W: postfix source: source-nmu-has-incorrect-version-number 3.6.2-100
 Finished running lintian.

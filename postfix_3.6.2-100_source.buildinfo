@@ -1,16 +1,16 @@
 Format: 1.0
 Source: postfix
 Architecture: source
-Version: 3.6.2-1
+Version: 3.6.2-100
 Checksums-Md5:
- d20e5511ce00c67d2325dea38586c6ff 1870 postfix_3.6.2-1.dsc
+ 7fb684536642b835ce3247f872b2861e 1878 postfix_3.6.2-100.dsc
 Checksums-Sha1:
- 71b424f445f1a8ab91fd7514da9df9abe3075a2a 1870 postfix_3.6.2-1.dsc
+ 93836fbb1dd110af0d95733dbc6131073ce7a849 1878 postfix_3.6.2-100.dsc
 Checksums-Sha256:
- de9147001a4c9fb08cf6aa1b974c4a6202268af32bb7e06ee1a3fc5a39ea2d57 1870 postfix_3.6.2-1.dsc
+ 64a8eefa43c4a69f04fcce80e36e1ba704ff756076d94ff8b1d4763acf81d773 1878 postfix_3.6.2-100.dsc
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Thu, 16 Sep 2021 21:53:52 +0000
+Build-Date: Fri, 17 Sep 2021 07:25:45 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),
@@ -179,4 +179,4 @@ Installed-Build-Depends:
  zlib1g (= 1:1.2.11.dfsg-2)
 Environment:
  DEB_BUILD_OPTIONS="parallel=2"
- SOURCE_DATE_EPOCH="1631790000"
+ SOURCE_DATE_EPOCH="1631862332"
