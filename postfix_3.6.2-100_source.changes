@@ -17,14 +17,14 @@ Checksums-Sha1:
  93836fbb1dd110af0d95733dbc6131073ce7a849 1878 postfix_3.6.2-100.dsc
  712230d7b0789d6610d84e8f03937f720fe3963d 4749530 postfix_3.6.2.orig.tar.gz
  f7c4cf2f5feffcb1d664e1c41532b7effd606c18 204120 postfix_3.6.2-100.debian.tar.xz
- e51ba0870a98f26d42ca34901d9c06585ed1ed5b 4890 postfix_3.6.2-100_source.buildinfo
+ 01a2785d9d8acc81a4d65d5bc5e627b598ca8aea 4890 postfix_3.6.2-100_source.buildinfo
 Checksums-Sha256:
  64a8eefa43c4a69f04fcce80e36e1ba704ff756076d94ff8b1d4763acf81d773 1878 postfix_3.6.2-100.dsc
  507323d20d7b3f705f49cf8c07d437c6d8090bed07e15a3c0ec405edad54a7d4 4749530 postfix_3.6.2.orig.tar.gz
  948ec9561655cd965032a990a0191f05c2284bb73303c9b21967c234fbcb2395 204120 postfix_3.6.2-100.debian.tar.xz
- 14833f71df9114079dd4fd41fbe989e7ef0902dd4536729e6b7505e94b285c12 4890 postfix_3.6.2-100_source.buildinfo
+ 397c43beadff8fa1d480d09d9e05997a8a057a054f55e6f9a19e383742590ca6 4890 postfix_3.6.2-100_source.buildinfo
 Files:
  7fb684536642b835ce3247f872b2861e 1878 mail optional postfix_3.6.2-100.dsc
  4718b498fa4285cf275f506c169f4746 4749530 mail optional postfix_3.6.2.orig.tar.gz
  887af8eb238c2ea7a9906356d44d2990 204120 mail optional postfix_3.6.2-100.debian.tar.xz
- 1b7ced14a9161001fcd23dbc99dde7ec 4890 mail optional postfix_3.6.2-100_source.buildinfo
+ afa080c9932e6f8a1c2375a8bdc89569 4890 mail optional postfix_3.6.2-100_source.buildinfo
