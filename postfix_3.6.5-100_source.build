@@ -1,0 +1,560 @@
+ dpkg-buildpackage -us -uc -ui -i -d -S
+dpkg-buildpackage: info: source package postfix
+dpkg-buildpackage: info: source version 3.6.5-100
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Package Store <mail@z17.dev>
+ dpkg-source -i --before-build .
+dpkg-source: info: using options from _build/debian/source/options: --extend-diff-ignore=^html/
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying 02_kfreebsd_support.diff
+dpkg-source: info: applying 03_ldap3_by_default.diff
+dpkg-source: info: applying 04_remove_gdbm_support.diff
+dpkg-source: info: applying 05_debian_defaults.diff
+dpkg-source: info: applying 05_debian_manpage_differences.diff
+dpkg-source: info: applying 05_debian_readme_differences.diff
+dpkg-source: info: applying 06_debian_paths.diff
+dpkg-source: info: applying 07_sasl_config.diff
+dpkg-source: info: applying 10_openssl_version_check.diff
+dpkg-source: info: applying 40_chroot_by_default.diff
+dpkg-source: info: applying 41_rmail.diff
+dpkg-source: info: applying 50_LANG.diff
+dpkg-source: info: applying 70_postfix-check.diff
+dpkg-source: info: applying debian-man-name.diff
+dpkg-source: info: applying 71_debianize_collate.pl
+ debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/root/git/repo_src/_build'
+/usr/bin/make tidy
+make[2]: Entering directory '/root/git/repo_src/_build'
+/usr/bin/make -f Makefile.in MAKELEVEL= Makefiles
+make: Entering directory '/root/git/repo_src/_build'
+(echo "# Do not edit -- this file documents how Postfix was built for your machine."; /bin/sh makedefs) >makedefs.tmp
+set +e; if cmp makedefs.tmp conf/makedefs.out; then rm makedefs.tmp; \
+else mv makedefs.tmp conf/makedefs.out; fi >/dev/null 2>/dev/null
+set -e; for i in src/util src/global src/dns src/tls src/xsasl src/master src/milter src/postfix src/fsstone src/smtpstone src/sendmail src/error src/pickup src/cleanup src/smtpd src/local src/trivial-rewrite src/qmgr src/oqmgr src/smtp src/bounce src/pipe src/showq src/postalias src/postcat src/postconf src/postdrop src/postkick src/postlock src/postlog src/postmap src/postqueue src/postsuper src/qmqpd src/spawn src/flush src/verify rmail src/virtual src/proxymap src/anvil src/scache src/discard src/tlsmgr src/postmulti src/postscreen src/dnsblog src/tlsproxy src/posttls-finger src/postlogd; do \
+ (set -e; echo "[$i]"; cd $i; rm -f Makefile; \
+ /usr/bin/make -f Makefile.in Makefile MAKELEVEL=) || exit 1; \
+done
+[src/util]
+make: Entering directory '/root/git/repo_src/_build/src/util'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/util'
+[src/global]
+make: Entering directory '/root/git/repo_src/_build/src/global'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/global'
+[src/dns]
+make: Entering directory '/root/git/repo_src/_build/src/dns'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/dns'
+[src/tls]
+make: Entering directory '/root/git/repo_src/_build/src/tls'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/tls'
+[src/xsasl]
+make: Entering directory '/root/git/repo_src/_build/src/xsasl'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/xsasl'
+[src/master]
+make: Entering directory '/root/git/repo_src/_build/src/master'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/master'
+[src/milter]
+make: Entering directory '/root/git/repo_src/_build/src/milter'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/milter'
+[src/postfix]
+make: Entering directory '/root/git/repo_src/_build/src/postfix'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postfix'
+[src/fsstone]
+make: Entering directory '/root/git/repo_src/_build/src/fsstone'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/fsstone'
+[src/smtpstone]
+make: Entering directory '/root/git/repo_src/_build/src/smtpstone'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/smtpstone'
+[src/sendmail]
+make: Entering directory '/root/git/repo_src/_build/src/sendmail'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/sendmail'
+[src/error]
+make: Entering directory '/root/git/repo_src/_build/src/error'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/error'
+[src/pickup]
+make: Entering directory '/root/git/repo_src/_build/src/pickup'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/pickup'
+[src/cleanup]
+make: Entering directory '/root/git/repo_src/_build/src/cleanup'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/cleanup'
+[src/smtpd]
+make: Entering directory '/root/git/repo_src/_build/src/smtpd'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/smtpd'
+[src/local]
+make: Entering directory '/root/git/repo_src/_build/src/local'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/local'
+[src/trivial-rewrite]
+make: Entering directory '/root/git/repo_src/_build/src/trivial-rewrite'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/trivial-rewrite'
+[src/qmgr]
+make: Entering directory '/root/git/repo_src/_build/src/qmgr'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/qmgr'
+[src/oqmgr]
+make: Entering directory '/root/git/repo_src/_build/src/oqmgr'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/oqmgr'
+[src/smtp]
+make: Entering directory '/root/git/repo_src/_build/src/smtp'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/smtp'
+[src/bounce]
+make: Entering directory '/root/git/repo_src/_build/src/bounce'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/bounce'
+[src/pipe]
+make: Entering directory '/root/git/repo_src/_build/src/pipe'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/pipe'
+[src/showq]
+make: Entering directory '/root/git/repo_src/_build/src/showq'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/showq'
+[src/postalias]
+make: Entering directory '/root/git/repo_src/_build/src/postalias'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postalias'
+[src/postcat]
+make: Entering directory '/root/git/repo_src/_build/src/postcat'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postcat'
+[src/postconf]
+make: Entering directory '/root/git/repo_src/_build/src/postconf'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postconf'
+[src/postdrop]
+make: Entering directory '/root/git/repo_src/_build/src/postdrop'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postdrop'
+[src/postkick]
+make: Entering directory '/root/git/repo_src/_build/src/postkick'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postkick'
+[src/postlock]
+make: Entering directory '/root/git/repo_src/_build/src/postlock'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postlock'
+[src/postlog]
+make: Entering directory '/root/git/repo_src/_build/src/postlog'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postlog'
+[src/postmap]
+make: Entering directory '/root/git/repo_src/_build/src/postmap'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postmap'
+[src/postqueue]
+make: Entering directory '/root/git/repo_src/_build/src/postqueue'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postqueue'
+[src/postsuper]
+make: Entering directory '/root/git/repo_src/_build/src/postsuper'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postsuper'
+[src/qmqpd]
+make: Entering directory '/root/git/repo_src/_build/src/qmqpd'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/qmqpd'
+[src/spawn]
+make: Entering directory '/root/git/repo_src/_build/src/spawn'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/spawn'
+[src/flush]
+make: Entering directory '/root/git/repo_src/_build/src/flush'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/flush'
+[src/verify]
+make: Entering directory '/root/git/repo_src/_build/src/verify'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/verify'
+[rmail]
+make: Entering directory '/root/git/repo_src/_build/rmail'
+cat ../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/rmail'
+[src/virtual]
+make: Entering directory '/root/git/repo_src/_build/src/virtual'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/virtual'
+[src/proxymap]
+make: Entering directory '/root/git/repo_src/_build/src/proxymap'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/proxymap'
+[src/anvil]
+make: Entering directory '/root/git/repo_src/_build/src/anvil'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/anvil'
+[src/scache]
+make: Entering directory '/root/git/repo_src/_build/src/scache'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/scache'
+[src/discard]
+make: Entering directory '/root/git/repo_src/_build/src/discard'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/discard'
+[src/tlsmgr]
+make: Entering directory '/root/git/repo_src/_build/src/tlsmgr'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/tlsmgr'
+[src/postmulti]
+make: Entering directory '/root/git/repo_src/_build/src/postmulti'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postmulti'
+[src/postscreen]
+make: Entering directory '/root/git/repo_src/_build/src/postscreen'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postscreen'
+[src/dnsblog]
+make: Entering directory '/root/git/repo_src/_build/src/dnsblog'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/dnsblog'
+[src/tlsproxy]
+make: Entering directory '/root/git/repo_src/_build/src/tlsproxy'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/tlsproxy'
+[src/posttls-finger]
+make: Entering directory '/root/git/repo_src/_build/src/posttls-finger'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/posttls-finger'
+[src/postlogd]
+make: Entering directory '/root/git/repo_src/_build/src/postlogd'
+cat ../../conf/makedefs.out Makefile.in >Makefile
+make: Leaving directory '/root/git/repo_src/_build/src/postlogd'
+make: Leaving directory '/root/git/repo_src/_build'
+/usr/bin/make MAKELEVEL= tidy
+make: Entering directory '/root/git/repo_src/_build'
+set -e; for i in src/util src/global src/dns src/tls src/xsasl src/master src/milter src/postfix src/fsstone src/smtpstone src/sendmail src/error src/pickup src/cleanup src/smtpd src/local src/trivial-rewrite src/qmgr src/oqmgr src/smtp src/bounce src/pipe src/showq src/postalias src/postcat src/postconf src/postdrop src/postkick src/postlock src/postlog src/postmap src/postqueue src/postsuper src/qmqpd src/spawn src/flush src/verify rmail src/virtual src/proxymap src/anvil src/scache src/discard src/tlsmgr src/postmulti src/postscreen src/dnsblog src/tlsproxy src/posttls-finger src/postlogd; do \
+ (set -e; echo "[$i]"; cd $i; /usr/bin/make clean) || exit 1; \
+done
+[src/util]
+make: Entering directory '/root/git/repo_src/_build/src/util'
+rm -f *.o libutil.a *core dict_open dup2_pass_on_exec events exec_command fifo_open fifo_rdonly_bug fifo_rdwr_bug fifo_trigger fsspace fullname inet_addr_host inet_addr_local mac_parse make_dirs msg_syslog mystrtok sigdelay translit valid_hostname vstream_popen vstring vstring_vstream doze select_bug stream_test mac_expand watchdog unescape hex_quote name_mask rand_sleep sane_time ctable inet_addr_list attr_print64 attr_scan64 base64_code attr_print0 attr_scan0 host_port attr_scan_plain attr_print_plain htable unix_recv_fd unix_send_fd stream_recv_fd stream_send_fd hex_code myaddrinfo myaddrinfo4 inet_proto sane_basename format_tv valid_utf8_string ip_match base32_code msg_rate_delay netstring vstream timecmp dict_cache midna_domain casefold strcasecmp_utf8 vbuf_print split_qnameval vstream msg_logger byte_mask known_tcp_ports junk  *.tmp
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/util'
+[src/global]
+make: Entering directory '/root/git/repo_src/_build/src/global'
+rm -f *.o libglobal.a *core domain_list dot_lockfile mail_addr_crunch mail_addr_find mail_addr_map mail_date maps mynetworks mypwd namadr_list off_cvt quote_822_local rec2stream recdump resolve_clnt resolve_local rewrite_clnt stream2rec string_list tok822_parse quote_821_local mail_conf_time mime_state strip_addr verify_clnt xtext anvil_clnt scache ehlo_mask valid_mailhost_addr own_inet_addr header_body_checks data_redirect addr_match_list safe_ultostr verify_sender_addr mail_version mail_dict server_acl uxtext mail_parm_split fold_addr smtp_reply_footer mail_addr_map normalize_mailhost_addr haproxy_srvr map_search delivered_hdr login_sender_match compat_level config_known_tcp_ports junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/global'
+[src/dns]
+make: Entering directory '/root/git/repo_src/_build/src/dns'
+rm -f *.o libdns.a *core test_dns_lookup dns_rr_to_pa dns_rr_to_sa dns_sa_to_rr dns_rr_eq_sa junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/dns'
+[src/tls]
+make: Entering directory '/root/git/repo_src/_build/src/tls'
+rm -f *.o libtls.a *core tls_dh tls_mgr tls_dane tls_certkey junk *.pem.out
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/tls'
+[src/xsasl]
+make: Entering directory '/root/git/repo_src/_build/src/xsasl'
+rm -f *.o libxsasl.a *core  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/xsasl'
+[src/master]
+make: Entering directory '/root/git/repo_src/_build/src/master'
+rm -f *.o *core master junk libmaster.a 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/master'
+[src/milter]
+make: Entering directory '/root/git/repo_src/_build/src/milter'
+rm -f *.o libmilter.a *core milter test-milter junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/milter'
+[src/postfix]
+make: Entering directory '/root/git/repo_src/_build/src/postfix'
+rm -f *.o *core postfix  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postfix'
+[src/fsstone]
+make: Entering directory '/root/git/repo_src/_build/src/fsstone'
+rm -f *.o *core fsstone  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/fsstone'
+[src/smtpstone]
+make: Entering directory '/root/git/repo_src/_build/src/smtpstone'
+rm -f *.o *core smtp-source smtp-sink qmqp-source qmqp-sink  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/smtpstone'
+[src/sendmail]
+make: Entering directory '/root/git/repo_src/_build/src/sendmail'
+rm -f *.o *core sendmail  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/sendmail'
+[src/error]
+make: Entering directory '/root/git/repo_src/_build/src/error'
+rm -f *.o *core error  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/error'
+[src/pickup]
+make: Entering directory '/root/git/repo_src/_build/src/pickup'
+rm -f *.o *core pickup  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/pickup'
+[src/cleanup]
+make: Entering directory '/root/git/repo_src/_build/src/cleanup'
+rm -f *.o *core cleanup cleanup_masquerade cleanup_milter junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/cleanup'
+[src/smtpd]
+make: Entering directory '/root/git/repo_src/_build/src/smtpd'
+rm -f *.o *core smtpd smtpd_token smtpd_check junk *.db *.out *.tmp
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/smtpd'
+[src/local]
+make: Entering directory '/root/git/repo_src/_build/src/local'
+rm -f *.o *core local  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/local'
+[src/trivial-rewrite]
+make: Entering directory '/root/git/repo_src/_build/src/trivial-rewrite'
+rm -f *.o *core trivial-rewrite transport junk  
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/trivial-rewrite'
+[src/qmgr]
+make: Entering directory '/root/git/repo_src/_build/src/qmgr'
+rm -f *.o *core qmgr  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/qmgr'
+[src/oqmgr]
+make: Entering directory '/root/git/repo_src/_build/src/oqmgr'
+rm -f *.o *core qmgr  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/oqmgr'
+[src/smtp]
+make: Entering directory '/root/git/repo_src/_build/src/smtp'
+rm -f *.o *core smtp smtp_unalias smtp_map11 junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/smtp'
+[src/bounce]
+make: Entering directory '/root/git/repo_src/_build/src/bounce'
+rm -f *.o *core bounce bounce_notify_util_tester junk main.cf
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/bounce'
+[src/pipe]
+make: Entering directory '/root/git/repo_src/_build/src/pipe'
+rm -f *.o *core pipe  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/pipe'
+[src/showq]
+make: Entering directory '/root/git/repo_src/_build/src/showq'
+rm -f *.o *core showq  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/showq'
+[src/postalias]
+make: Entering directory '/root/git/repo_src/_build/src/postalias'
+rm -f *.o *core postalias  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postalias'
+[src/postcat]
+make: Entering directory '/root/git/repo_src/_build/src/postcat'
+rm -f *.o *core postcat  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postcat'
+[src/postconf]
+make: Entering directory '/root/git/repo_src/_build/src/postconf'
+rm -f *.o *core postconf  junk bool_table.h bool_vars.h int_table.h int_vars.h str_table.h str_vars.h time_table.h time_vars.h raw_table.h raw_vars.h nint_table.h nint_vars.h nbool_table.h nbool_vars.h long_table.h long_vars.h str_fn_table.h str_fn_vars.h   makes_dummy  \
+main.cf master.cf test*.tmp pcf_ldap_suffixes.h pcf_memcache_suffixes.h pcf_mysql_suffixes.h pcf_pgsql_suffixes.h pcf_sqlite_suffixes.h
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postconf'
+[src/postdrop]
+make: Entering directory '/root/git/repo_src/_build/src/postdrop'
+rm -f *.o *core postdrop  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postdrop'
+[src/postkick]
+make: Entering directory '/root/git/repo_src/_build/src/postkick'
+rm -f *.o *core postkick  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postkick'
+[src/postlock]
+make: Entering directory '/root/git/repo_src/_build/src/postlock'
+rm -f *.o *core postlock  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postlock'
+[src/postlog]
+make: Entering directory '/root/git/repo_src/_build/src/postlog'
+rm -f *.o *core postlog  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postlog'
+[src/postmap]
+make: Entering directory '/root/git/repo_src/_build/src/postmap'
+rm -f *.o *core postmap  *.tmp junk *.db
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postmap'
+[src/postqueue]
+make: Entering directory '/root/git/repo_src/_build/src/postqueue'
+rm -f *.o *core postqueue  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postqueue'
+[src/postsuper]
+make: Entering directory '/root/git/repo_src/_build/src/postsuper'
+rm -f *.o *core postsuper  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postsuper'
+[src/qmqpd]
+make: Entering directory '/root/git/repo_src/_build/src/qmqpd'
+rm -f *.o *core qmqpd  junk *.db *.out *.tmp
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/qmqpd'
+[src/spawn]
+make: Entering directory '/root/git/repo_src/_build/src/spawn'
+rm -f *.o *core spawn  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/spawn'
+[src/flush]
+make: Entering directory '/root/git/repo_src/_build/src/flush'
+rm -f *.o *core flush  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/flush'
+[src/verify]
+make: Entering directory '/root/git/repo_src/_build/src/verify'
+rm -f *.o *core verify  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/verify'
+[rmail]
+make: Entering directory '/root/git/repo_src/_build/rmail'
+rm -f *.o *core rmail  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/rmail'
+[src/virtual]
+make: Entering directory '/root/git/repo_src/_build/src/virtual'
+rm -f *.o *core virtual  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/virtual'
+[src/proxymap]
+make: Entering directory '/root/git/repo_src/_build/src/proxymap'
+rm -f *.o *core proxymap  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/proxymap'
+[src/anvil]
+make: Entering directory '/root/git/repo_src/_build/src/anvil'
+rm -f *.o *core anvil  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/anvil'
+[src/scache]
+make: Entering directory '/root/git/repo_src/_build/src/scache'
+rm -f *.o *core scache  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/scache'
+[src/discard]
+make: Entering directory '/root/git/repo_src/_build/src/discard'
+rm -f *.o *core discard  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/discard'
+[src/tlsmgr]
+make: Entering directory '/root/git/repo_src/_build/src/tlsmgr'
+rm -f *.o *core tlsmgr  junk *.db *.out *.tmp
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/tlsmgr'
+[src/postmulti]
+make: Entering directory '/root/git/repo_src/_build/src/postmulti'
+rm -f *.o *core postmulti  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postmulti'
+[src/postscreen]
+make: Entering directory '/root/git/repo_src/_build/src/postscreen'
+rm -f *.o *core postscreen  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postscreen'
+[src/dnsblog]
+make: Entering directory '/root/git/repo_src/_build/src/dnsblog'
+rm -f *.o *core dnsblog  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/dnsblog'
+[src/tlsproxy]
+make: Entering directory '/root/git/repo_src/_build/src/tlsproxy'
+rm -f *.o *core tlsproxy  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/tlsproxy'
+[src/posttls-finger]
+make: Entering directory '/root/git/repo_src/_build/src/posttls-finger'
+rm -f *.o *core posttls-finger  junk
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/posttls-finger'
+[src/postlogd]
+make: Entering directory '/root/git/repo_src/_build/src/postlogd'
+rm -f *.o *core postlogd  junk 
+rm -rf printfck
+make: Leaving directory '/root/git/repo_src/_build/src/postlogd'
+rm -f Makefile */Makefile src/*/Makefile
+cp -p Makefile.init Makefile
+rm -f README_FILES/RELEASE_NOTES
+ln -s ../RELEASE_NOTES README_FILES
+rm -f bin/[!CRS]* lib/[!CRS]* include/[!CRS]* libexec/[!CRS]* \
+    src/*/libpostfix-*.so src/*/libpostfix-*.dylib \
+    src/*/postfix-*.so src/*/postfix-*.dylib \
+    junk */junk */*/junk \
+    *core */*core */*/*core \
+    .nfs* */.nfs* */*/.nfs* \
+    .pure */.pure */*/.pure \
+    *.out */*.out */*/*.out \
+    *.tmp */*.tmp */*/*.tmp \
+    *.a */*.a */*/*.a \
+    *~ */*~ */*/*~ \
+    *- */*- */*/*- \
+    *.orig */*.orig */*/*.orig \
+    *.bak */*.bak */*/*.bak \
+    make.err */make.err */*/make.err \
+    *.gmon */*.gmon */*/*.gmon \
+    conf/main.cf.default conf/bounce.cf.default meta/*
+find . -type s -print | xargs rm -f
+find . -type d -print | xargs chmod 755
+find . -type f -print | xargs chmod a+r
+make: Leaving directory '/root/git/repo_src/_build'
+make[2]: Leaving directory '/root/git/repo_src/_build'
+make[1]: Leaving directory '/root/git/repo_src/_build'
+   dh_clean
+ dpkg-source -i -b .
+dpkg-source: warning: upstream signing key but no upstream tarball signature
+dpkg-source: info: using options from _build/debian/source/options: --extend-diff-ignore=^html/
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building postfix using existing ./postfix_3.6.5.orig.tar.xz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: building postfix in postfix_3.6.5-100.debian.tar.xz
+dpkg-source: info: building postfix in postfix_3.6.5-100.dsc
+ dpkg-genbuildinfo --build=source
+ dpkg-genchanges --build=source >../postfix_3.6.5-100_source.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source -i --after-build .
+dpkg-source: info: using options from _build/debian/source/options: --extend-diff-ignore=^html/
+dpkg-source: info: unapplying 71_debianize_collate.pl
+dpkg-source: info: unapplying debian-man-name.diff
+dpkg-source: info: unapplying 70_postfix-check.diff
+dpkg-source: info: unapplying 50_LANG.diff
+dpkg-source: info: unapplying 41_rmail.diff
+dpkg-source: info: unapplying 40_chroot_by_default.diff
+dpkg-source: info: unapplying 10_openssl_version_check.diff
+dpkg-source: info: unapplying 07_sasl_config.diff
+dpkg-source: info: unapplying 06_debian_paths.diff
+dpkg-source: info: unapplying 05_debian_readme_differences.diff
+dpkg-source: info: unapplying 05_debian_manpage_differences.diff
+dpkg-source: info: unapplying 05_debian_defaults.diff
+dpkg-source: info: unapplying 04_remove_gdbm_support.diff
+dpkg-source: info: unapplying 03_ldap3_by_default.diff
+dpkg-source: info: unapplying 02_kfreebsd_support.diff
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian postfix_3.6.5-100_source.changes ...
+warning: running with root privileges is not recommended!
+W: postfix source: newer-standards-version 4.6.0 (current is 4.5.1)
+W: postfix source: no-nmu-in-changelog
+W: postfix source: orig-tarball-missing-upstream-signature postfix_3.6.5.orig.tar.xz
+W: postfix source: source-nmu-has-incorrect-version-number 3.6.5-100
+N: 1 hint overridden (1 info)
+Finished running lintian.
