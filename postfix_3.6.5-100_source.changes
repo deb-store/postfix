@@ -16,14 +16,14 @@ Checksums-Sha1:
  1b3449b37809d8f38b77ca1a1811705ed517abef 1866 postfix_3.6.5-100.dsc
  3cc426650c4726ea8e7c785b6c754503452ffdaf 2508844 postfix_3.6.5.orig.tar.xz
  ec7471dd3f984dc216ad49eb2a9e969f4361a4a1 200636 postfix_3.6.5-100.debian.tar.xz
- 871c91be1c17e502126899b14c0abac15afd55c8 5107 postfix_3.6.5-100_source.buildinfo
+ 88c4b4d7b71a548eb8f950e02c0c6e6b5d5442ee 5107 postfix_3.6.5-100_source.buildinfo
 Checksums-Sha256:
  53df26a80745e86b1bff8003547cb96cbeada993797a6f37bd3dd90dbbfd2c3c 1866 postfix_3.6.5-100.dsc
  50a059fa0d3011a4994cb9d332c3236f5692099c84f74a1498e91c6654f002e1 2508844 postfix_3.6.5.orig.tar.xz
  e939318ff7556468ae446dbc85c477e3bffff7fe60605949c5784a5d27bf7fd3 200636 postfix_3.6.5-100.debian.tar.xz
- 19b1c14d0f638be8e40e6b8ead06ef98fbfbdd83987880b89dcb61a32f895998 5107 postfix_3.6.5-100_source.buildinfo
+ 400982ae9d56e9bb193f151223b46d2b3a94c163e9ff5c4d2a255e86011f80cf 5107 postfix_3.6.5-100_source.buildinfo
 Files:
  2b32502977b48af0a70ae2015817f889 1866 mail optional postfix_3.6.5-100.dsc
  4797dce142dfa7c711eb003edcfde507 2508844 mail optional postfix_3.6.5.orig.tar.xz
  8bf090b6448b44c8330d2993b551a926 200636 mail optional postfix_3.6.5-100.debian.tar.xz
- f9dd4c7f8987b8c7d07d01db853f171c 5107 mail optional postfix_3.6.5-100_source.buildinfo
+ bae9c9111a05b9b2e5ade9b6eb6ea8de 5107 mail optional postfix_3.6.5-100_source.buildinfo
