@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: postfix
 Binary: postfix, postfix-ldap, postfix-lmdb, postfix-cdb, postfix-pcre, postfix-mysql, postfix-pgsql, postfix-sqlite, postfix-doc
 Architecture: any all
-Version: 3.6.5-100
+Version: 3.6.5-1000
 Maintainer: LaMont Jones <lamont@debian.org>
 Uploaders: Scott Kitterman <scott@kitterman.com>
 Homepage: http://www.postfix.org
@@ -24,10 +24,10 @@ Package-List:
  postfix-sqlite deb mail optional arch=any
 Checksums-Sha1:
  3cc426650c4726ea8e7c785b6c754503452ffdaf 2508844 postfix_3.6.5.orig.tar.xz
- dbd2e7ddaaf00ef27670810b158e547bee04045e 200628 postfix_3.6.5-100.debian.tar.xz
+ f5bd0259de5692641bd3db6cd9be81b3be9e0547 200560 postfix_3.6.5-1000.debian.tar.xz
 Checksums-Sha256:
  50a059fa0d3011a4994cb9d332c3236f5692099c84f74a1498e91c6654f002e1 2508844 postfix_3.6.5.orig.tar.xz
- e30aeb647b32c8555e6061c2ba1225cc66b4ee058e4920b2d05575914b200f32 200628 postfix_3.6.5-100.debian.tar.xz
+ 3e884283a383abaf840563b5e8350a7acbf1597ba540d5246c0cf7873b1e802b 200560 postfix_3.6.5-1000.debian.tar.xz
 Files:
  4797dce142dfa7c711eb003edcfde507 2508844 postfix_3.6.5.orig.tar.xz
- 4e2c5ce7e7dc4a989fdaf745efc88dc0 200628 postfix_3.6.5-100.debian.tar.xz
+ b89a21ff4bc2b7c7f51e2867a613c24d 200560 postfix_3.6.5-1000.debian.tar.xz
