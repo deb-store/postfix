@@ -3,14 +3,14 @@ Source: postfix
 Architecture: source
 Version: 3.6.5-100
 Checksums-Md5:
- 3a6ffec76821259ad4f3d42199ef6ef9 1866 postfix_3.6.5-100.dsc
+ 2b32502977b48af0a70ae2015817f889 1866 postfix_3.6.5-100.dsc
 Checksums-Sha1:
- 8a1cd6db6a5ca3292a82d263dc335c13a6d22519 1866 postfix_3.6.5-100.dsc
+ 1b3449b37809d8f38b77ca1a1811705ed517abef 1866 postfix_3.6.5-100.dsc
 Checksums-Sha256:
- 71fc1b4eab1d2e05e75fb51b6eb1425cac28084de37363eaa18ee31825ba437d 1866 postfix_3.6.5-100.dsc
+ 53df26a80745e86b1bff8003547cb96cbeada993797a6f37bd3dd90dbbfd2c3c 1866 postfix_3.6.5-100.dsc
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Fri, 01 Apr 2022 09:06:58 +0000
+Build-Date: Wed, 06 Apr 2022 11:34:57 +0000
 Installed-Build-Depends:
  autoconf (= 2.69-14),
  automake (= 1:1.16.3-2),

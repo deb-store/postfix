@@ -24,10 +24,10 @@ Package-List:
  postfix-sqlite deb mail optional arch=any
 Checksums-Sha1:
  3cc426650c4726ea8e7c785b6c754503452ffdaf 2508844 postfix_3.6.5.orig.tar.xz
- dbd2e7ddaaf00ef27670810b158e547bee04045e 200628 postfix_3.6.5-100.debian.tar.xz
+ ec7471dd3f984dc216ad49eb2a9e969f4361a4a1 200636 postfix_3.6.5-100.debian.tar.xz
 Checksums-Sha256:
  50a059fa0d3011a4994cb9d332c3236f5692099c84f74a1498e91c6654f002e1 2508844 postfix_3.6.5.orig.tar.xz
- e30aeb647b32c8555e6061c2ba1225cc66b4ee058e4920b2d05575914b200f32 200628 postfix_3.6.5-100.debian.tar.xz
+ e939318ff7556468ae446dbc85c477e3bffff7fe60605949c5784a5d27bf7fd3 200636 postfix_3.6.5-100.debian.tar.xz
 Files:
  4797dce142dfa7c711eb003edcfde507 2508844 postfix_3.6.5.orig.tar.xz
- 4e2c5ce7e7dc4a989fdaf745efc88dc0 200628 postfix_3.6.5-100.debian.tar.xz
+ 8bf090b6448b44c8330d2993b551a926 200636 postfix_3.6.5-100.debian.tar.xz
